@@ -5,4 +5,6 @@
 const { add } = require('lodash');
 const { foo } = require('@dwiyatci/foo-pkg');
 
-module.exports = { bar: add(foo, 1) };
+const bar = add(foo, 1);
+
+module.exports = { bar };
