@@ -1,0 +1,15 @@
+{
+  "name": "@dwiyatci/bar-pkg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Glenn Dwiyatcita <glenn@nonpartisan.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "3.10.1",
+    "@dwiyatci/foo-pkg": "1.0.0"
+  }
+}
