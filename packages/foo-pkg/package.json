@@ -11,5 +11,8 @@
   "dependencies": {
     "lodash": "4.17.15",
     "the-answer": "1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

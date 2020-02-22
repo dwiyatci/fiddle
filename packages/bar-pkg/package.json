@@ -11,5 +11,8 @@
   "dependencies": {
     "@dwiyatci/foo-pkg": "^1.0.0",
     "lodash": "3.10.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
