@@ -2,9 +2,11 @@
   "name": "@dwiyatci/foo-pkg",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build -- --watch",
+    "build": "babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\" --root-mode upward --copy-files --delete-dir-on-start --source-maps"
   },
   "author": "Glenn Dwiyatcita <glenn@nonpartisan.com>",
   "license": "ISC",

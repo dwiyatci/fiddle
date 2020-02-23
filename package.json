@@ -2,10 +2,27 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "install:clean": "npm run clean && npm isntall",
+    "clean": "lerna clean --yes",
     "postinstall": "npm run bootstrap",
     "bootstrap": "lerna bootstrap --hoist"
   },
+  "dependencies": {
+    "@babel/runtime-corejs3": "7.8.4"
+  },
   "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.4",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "7.8.3",
+    "@babel/plugin-proposal-pipeline-operator": "7.8.3",
+    "@babel/plugin-transform-runtime": "7.8.3",
+    "@babel/preset-env": "7.8.4",
+    "@babel/preset-flow": "7.8.3",
+    "@babel/preset-react": "7.8.3",
+    "babel-plugin-client-only-require": "1.0.1",
     "lerna": "3.20.2",
     "prettier": "1.19.1"
   }
