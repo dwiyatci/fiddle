@@ -9,5 +9,7 @@
     "add": {
       "exact": true
     }
-  }
+  },
+  "npmClient": "yarn",
+  "useWorkspaces": true
 }
