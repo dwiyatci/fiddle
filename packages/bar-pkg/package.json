@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@dwiyatci/foo-pkg": "^1.0.1",
-    "lodash": "3.10.1"
+    "lodash": "4.17.19"
   },
   "publishConfig": {
     "access": "public"
