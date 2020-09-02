@@ -1,6 +1,6 @@
 {
   "packages": ["packages/*"],
-  "version": "independent",
+  "version": "1.0.0",
   "command": {
     "publish": {
       "ignoreChanges": ["ignored-file", "*.md"],
