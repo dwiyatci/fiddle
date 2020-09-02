@@ -6,7 +6,8 @@
     "xinstall:clean": "npm run clean && npm isntall",
     "clean": "lerna clean --yes",
     "xpostinstall": "yarn bootstrap",
-    "xbootstrap": "lerna bootstrap --hoist"
+    "xbootstrap": "lerna bootstrap --hoist",
+    "release": "lerna version --no-push --conventional-commits --exact --message \"chore(release): version %s build ${BUILD_NUMBER} [ci skip]\""
   },
   "dependencies": {
     "@babel/runtime-corejs3": "7.8.4"
