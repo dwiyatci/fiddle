@@ -1,6 +1,6 @@
 {
   "name": "@dwiyatci/bar-pkg",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "Glenn Dwiyatcita <glenn@nonpartisan.com>",
   "license": "ISC",
   "dependencies": {
-    "@dwiyatci/foo-pkg": "1.0.2",
+    "@dwiyatci/foo-pkg": "1.0.4",
     "lodash": "4.17.20"
   },
   "publishConfig": {
