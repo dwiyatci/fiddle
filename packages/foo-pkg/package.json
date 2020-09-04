@@ -11,7 +11,7 @@
   "author": "Glenn Dwiyatcita <glenn@nonpartisan.com>",
   "license": "ISC",
   "dependencies": {
-    "lodash": "4.17.15",
+    "lodash": "4.17.20",
     "the-answer": "1.0.0"
   },
   "publishConfig": {
