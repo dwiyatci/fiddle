@@ -7,7 +7,8 @@
     "clean": "lerna clean --yes",
     "xpostinstall": "yarn bootstrap",
     "xbootstrap": "lerna bootstrap --hoist",
-    "release": "lerna version --conventional-commits --exact --message \"chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes"
+    "release:dry-run": "lerna version --no-git-tag-version --no-push --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
+    "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "7.11.2"
