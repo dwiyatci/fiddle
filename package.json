@@ -9,7 +9,10 @@
     "xpostinstall": "yarn bootstrap",
     "xbootstrap": "lerna bootstrap --hoist",
     "release:dry-run": "lerna version --no-git-tag-version --no-push --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
-    "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes"
+    "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
+    "tw": "yarn test:watch",
+    "test:watch": "yarn test --watch",
+    "test": "jest"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "7.17.9"
@@ -29,6 +32,7 @@
     "@babel/preset-flow": "7.16.7",
     "@babel/preset-react": "7.16.7",
     "babel-plugin-client-only-require": "1.0.1",
+    "jest": "27.5.1",
     "lerna": "4.0.0",
     "prettier": "2.6.2"
   },
