@@ -14,7 +14,10 @@
     "cixro": "pnpm install:clean:root-only",
     "x": "lerna run x",
     "release:dry-run": "lerna version --no-git-tag-version --no-push --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
-    "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes"
+    "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
+    "tw": "yarn test:watch",
+    "test:watch": "yarn test --watch",
+    "test": "jest"
   },
   "dependencies": {
     "@babel/runtime": "7.28.2"
@@ -32,6 +35,7 @@
     "@lerna-lite/run": "4.6.2",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "babel-plugin-client-only-require": "1.0.1",
+    "jest": "27.5.1",
     "prettier": "3.6.2"
   },
   "workspaces": [
