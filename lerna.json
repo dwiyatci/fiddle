@@ -1,8 +1,9 @@
 {
+  "version": "1.0.4",
   "packages": [
     "packages/*"
   ],
-  "version": "1.0.4",
+  "npmClient": "pnpm",
   "command": {
     "publish": {
       "ignoreChanges": [
@@ -14,7 +15,5 @@
     "add": {
       "exact": true
     }
-  },
-  "npmClient": "yarn",
-  "useWorkspaces": true
+  }
 }

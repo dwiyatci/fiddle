@@ -2,41 +2,42 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "install:clean": "yarn upgrade || yarn install",
-    "xinstall:clean": "npm run clean && npm isntall",
-    "up": "yarn upgrade-interactive --latest",
-    "clean": "lerna clean --yes",
-    "xpostinstall": "yarn bootstrap",
-    "xbootstrap": "lerna bootstrap --hoist",
+    "install:clean": "pnpm upgrade || pnpm install",
+    "ich": "pnpm install:clean:hardcore",
+    "install:clean:hardcore": "pnpm purge && pnpm install",
+    "purge": "npx rimraf node_modules && pnpm -r nuke",
+    "upgr": "pnpm upgrade --recursive --latest --interactive",
+    "x": "lerna run x",
     "release:dry-run": "lerna version --no-git-tag-version --no-push --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
     "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "7.17.9"
+    "@babel/runtime-corejs3": "7.18.9"
   },
   "devDependencies": {
-    "@babel/cli": "7.17.6",
-    "@babel/core": "7.17.9",
-    "@babel/plugin-proposal-class-properties": "7.16.7",
-    "@babel/plugin-proposal-export-default-from": "7.16.7",
-    "@babel/plugin-proposal-export-namespace-from": "7.16.7",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "7.16.7",
-    "@babel/plugin-proposal-object-rest-spread": "7.17.3",
-    "@babel/plugin-proposal-optional-chaining": "7.16.7",
-    "@babel/plugin-proposal-pipeline-operator": "7.17.6",
-    "@babel/plugin-transform-runtime": "7.17.0",
-    "@babel/preset-env": "7.16.11",
-    "@babel/preset-flow": "7.16.7",
-    "@babel/preset-react": "7.16.7",
+    "@babel/cli": "7.18.9",
+    "@babel/core": "7.18.9",
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "@babel/plugin-proposal-export-default-from": "7.18.9",
+    "@babel/plugin-proposal-export-namespace-from": "7.18.9",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "7.18.9",
+    "@babel/plugin-proposal-optional-chaining": "7.18.9",
+    "@babel/plugin-proposal-pipeline-operator": "7.18.9",
+    "@babel/plugin-transform-runtime": "7.18.9",
+    "@babel/preset-env": "7.18.9",
+    "@babel/preset-flow": "7.18.6",
+    "@babel/preset-react": "7.18.6",
+    "@lerna-lite/cli": "1.6.0",
+    "@lerna-lite/run": "1.6.0",
     "babel-plugin-client-only-require": "1.0.1",
-    "lerna": "4.0.0",
-    "prettier": "2.6.2"
+    "prettier": "2.7.1"
   },
   "workspaces": [
     "packages/*"
   ],
   "volta": {
-    "node": "16.14.2",
+    "node": "14.17.5",
     "yarn": "1.19.1"
   }
 }
