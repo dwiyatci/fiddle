@@ -3,13 +3,14 @@
   "private": true,
   "scripts": {
     "install:clean": "pnpm upgrade || pnpm install",
-    "nuke": "pnpm install:clean:hardcore",
+    "rejoice": "pnpm install:clean:hardcore",
     "install:clean:hardcore": "pnpm purge && pnpm install",
     "purge": "pnpm dlx rimraf node_modules && pnpm -r nuke",
     "upgr": "pnpm upgrade --recursive --latest --interactive",
     "x": "lerna run x",
     "release:dry-run": "lerna version --no-git-tag-version --no-push --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
-    "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes"
+    "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
+    "start": "pnpm --filter \"@dwiyatci/cra\" start"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "7.18.9"

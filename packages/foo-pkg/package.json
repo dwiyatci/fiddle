@@ -1,22 +1,16 @@
 {
   "name": "@dwiyatci/foo-pkg",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "nuke": "pnpm dlx rimraf node_modules",
     "x": "echo \"x from foo\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pnpm build --watch",
-    "build": "babel src --out-dir lib --ignore \"src/{**/,}__tests__\" --root-mode upward --copy-files --delete-dir-on-start --source-maps"
+    "start": "pnpm build --watch"
   },
   "author": "Glenn Dwiyatcita <glenn@nonpartisan.com>",
   "license": "ISC",
-  "dependencies": {
-    "lodash": "4.17.21",
-    "the-answer": "1.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+  "dependencies": {}
 }
