@@ -6,7 +6,7 @@
   "scripts": {
     "nuke": "pnpm dlx rimraf node_modules",
     "x": "echo \"x from foo\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./src/__tests__/the-answer.spec.mjs",
     "start": "pnpm build --watch",
     "build": "babel src --out-dir lib --ignore \"src/{**/,}__tests__\" --root-mode upward --copy-files --delete-dir-on-start --source-maps"
   },
