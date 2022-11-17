@@ -10,7 +10,8 @@
     "x": "lerna run x",
     "release:dry-run": "lerna version --no-git-tag-version --no-push --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
     "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
-    "start": "pnpm --filter \"@dwiyatci/cra\" start"
+    "start": "pnpm --filter \"@dwiyatci/cra\" start",
+    "test-esm": "pnpm --filter \"@dwiyatci/foo-pkg\" foo"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "7.18.9"
@@ -32,13 +33,14 @@
     "@lerna-lite/cli": "1.6.0",
     "@lerna-lite/run": "1.6.0",
     "babel-plugin-client-only-require": "1.0.1",
+    "lerna": "6.0.3",
     "prettier": "2.7.1"
   },
   "workspaces": [
     "packages/*"
   ],
   "volta": {
-    "node": "18.8.0",
+    "node": "14.17.5",
     "pnpm": "7.11.0"
   }
 }

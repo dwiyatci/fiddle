@@ -1,18 +1,15 @@
 {
-  "name": "@dwiyatci/foo-pkg",
+  "name": "@dwiyatci/bar-pkg",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "nuke": "pnpm dlx rimraf node_modules",
-    "x": "echo \"x from foo\"",
+    "x": "echo \"x from bar\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "foo": "node index.js"
+    "bar": "node index.js"
   },
   "author": "Glenn Dwiyatcita <glenn@nonpartisan.com>",
   "license": "ISC",
-  "dependencies": {
-    "@dwiyatci/bar-pkg": "workspace:*"
-  }
+  "dependencies": {}
 }
