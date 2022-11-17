@@ -7,11 +7,12 @@
     "install:clean:hardcore": "pnpm purge && pnpm install",
     "purge": "pnpm dlx rimraf node_modules && pnpm -r nuke",
     "upgr": "pnpm upgrade --recursive --latest --interactive",
-    "x": "lerna run x",
+    "x": "lerna run x --stream",
     "release:dry-run": "lerna version --no-git-tag-version --no-push --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
     "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
     "start": "pnpm --filter \"@dwiyatci/cra\" start",
-    "test-esm": "pnpm --filter \"@dwiyatci/foo-pkg\" foo"
+    "test-esm": "pnpm --filter \"@dwiyatci/foo-pkg\" foo",
+    "build": "rimraf dist && webpack --mode development ./xfoo.js"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "7.18.9"
@@ -34,13 +35,16 @@
     "@lerna-lite/run": "1.6.0",
     "babel-plugin-client-only-require": "1.0.1",
     "lerna": "6.0.3",
-    "prettier": "2.7.1"
+    "prettier": "2.7.1",
+    "rimraf": "3.0.2",
+    "webpack": "5.75.0",
+    "webpack-cli": "5.0.0"
   },
   "workspaces": [
     "packages/*"
   ],
   "volta": {
     "node": "14.17.5",
-    "pnpm": "7.11.0"
+    "pnpm": "7.16.1"
   }
 }
