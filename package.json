@@ -15,9 +15,9 @@
     "x": "lerna run x",
     "release:dry-run": "lerna version --no-git-tag-version --no-push --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
     "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
-    "tw": "yarn test:watch",
-    "test:watch": "yarn test --watch",
-    "test": "jest"
+    "tw": "pnpm test:watch",
+    "test:watch": "pnpm run test --watch",
+    "test": "jest --config=g.config.json --testEnvironmentOptions='{\"theAnswer\": 42, \"foo\": \"43\"}'"
   },
   "dependencies": {
     "@babel/runtime": "7.28.2"
@@ -35,12 +35,9 @@
     "@lerna-lite/run": "4.6.2",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "babel-plugin-client-only-require": "1.0.1",
-    "jest": "27.5.1",
+    "jest": "29.3.1",
     "prettier": "3.6.2"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "volta": {
     "node": "22.17.1"
   }
