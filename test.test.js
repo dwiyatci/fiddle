@@ -57,3 +57,25 @@ test('testEnvironmentOptions', () => {
   expect(globalThis.theAnswer).toEqual(42);
   expect(global.foo).toEqual('43');
 });
+
+describe('simple arithmetics', () => {
+  console.log('before all');
+
+  test('1 + 1', () => {
+    expect(1 + 1).toEqual(2);
+    console.log('hi');
+  });
+
+  test('1 + 2 (async)', async () => {
+    const out = await new Promise((r) => setTimeout(() => r(1 + 1), 500));
+    expect(out).toEqual(2);
+    console.log('ho');
+  });
+
+  test('2 + 3', () => {
+    expect(2 + 3).toEqual(5);
+    console.log('ha');
+  });
+
+  console.log('after all');
+});
