@@ -4,8 +4,9 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "nuke": "pnpm dlx rimraf node_modules",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "yarn build --watch",
+    "start": "pnpm build --watch",
     "build": "babel src --out-dir lib --ignore \"src/{**/,}__tests__\" --root-mode upward --copy-files --delete-dir-on-start --source-maps"
   },
   "author": "Glenn Dwiyatcita <glenn@nonpartisan.com>",

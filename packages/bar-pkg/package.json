@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "nuke": "pnpm dlx rimraf node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Glenn Dwiyatcita <glenn@nonpartisan.com>",
