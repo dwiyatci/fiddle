@@ -2,5 +2,7 @@
   "displayName": {
     "name": "GLENN",
     "color": "blue"
-  }
+  },
+  "testEnvironment": "./jest-environment-fail-fast.js",
+  "setupFilesAfterEnv": ["./setup-after-env.js"]
 }

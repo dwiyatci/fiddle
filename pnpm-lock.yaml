@@ -2379,6 +2379,7 @@ snapshots:
       '@babel/core': 7.28.0
       '@babel/plugin-transform-react-jsx': 7.27.1(@babel/core@7.28.0)
     transitivePeerDependencies:
+      - babel-plugin-macros
       - supports-color
 
   '@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.0)':
