@@ -1,0 +1,13 @@
+{
+  "name": "package1",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "pnpm dlx rimraf node_modules"
+  },
+  "dependencies": {
+    "jquery": "2.2.4"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1"
+  }
+}
