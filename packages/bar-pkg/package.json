@@ -11,7 +11,7 @@
   "author": "Glenn Dwiyatcita <glenn@nonpartisan.com>",
   "license": "ISC",
   "dependencies": {
-    "@dwiyatci/foo-pkg": "workspace:*",
+    "@dwiyatci/foo-pkg": "1.0.4",
     "lodash": "4.17.21"
   },
   "publishConfig": {
