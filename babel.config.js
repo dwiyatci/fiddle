@@ -2,7 +2,7 @@
  * Created by i532660 on 23.02.20.
  */
 
-module.exports = function(api) {
+module.exports = function (api) {
   api.cache(true);
 
   const presets = [
@@ -55,7 +55,7 @@ module.exports = function(api) {
     '@babel/plugin-proposal-nullish-coalescing-operator',
     '@babel/plugin-proposal-optional-chaining',
     ['@babel/plugin-proposal-pipeline-operator', { proposal: 'hack', topicToken: '^^' }],
-    ['client-only-require', { extensions: ['less', 'scss', 'css', 'png', 'gif', 'jpg'] }]
+    ['client-only-require', { extensions: ['less', 'scss', 'css', 'png', 'gif', 'jpg'] }],
   ];
 
   const babelrcRoots = ['.', 'packages/*'];
@@ -63,6 +63,6 @@ module.exports = function(api) {
   return {
     presets,
     plugins,
-    babelrcRoots
+    babelrcRoots,
   };
 };

@@ -2,9 +2,11 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "install:clean:root-only": "pnpm dlx rimraf node_modules && pnpm install",
-    "install:clean": "pnpm clean && pnpm install",
-    "clean": "pnpm dlx rimraf node_modules && pnpm -r nuke",
+    "install:clean:root-only": "pnpm nuke && pnpm install",
+    "install:clean": "pnpm purge && pnpm install",
+    "purge": "pnpm nuke && pnpm clean",
+    "nuke": "pnpm dlx rimraf node_modules",
+    "clean": "pnpm -r nuke",
     "upgr": "pnpm upgrade --recursive --latest --interactive",
     "format": "prettier --write \"{**/*,*}.{js,ts,jsx,tsx,json,html,css,less,scss,sass,graphql,gql,yaml,yml,md}\"",
     "format:check": "prettier --list-different \"{**/*,*}.{js,ts,jsx,tsx,json,html,css,less,scss,sass,graphql,gql,yaml,yml,md}\"",
@@ -33,6 +35,7 @@
     "@babel/preset-react": "7.24.1",
     "@lerna-lite/cli": "3.3.3",
     "@lerna-lite/run": "3.3.3",
+    "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "babel-plugin-client-only-require": "1.0.1",
     "prettier": "3.2.5"
   },

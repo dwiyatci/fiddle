@@ -1,11 +1,11 @@
+import { clamp, identity } from 'lodash';
+import theAnswer from 'the-answer';
+
 /**
  * Created by i532660 on 22.02.20.
  */
 
 import('./myStyles.less');
-
-import { clamp, identity } from 'lodash';
-import theAnswer from 'the-answer';
 
 const foo = identity(clamp(theAnswer, 93));
 
