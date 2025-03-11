@@ -17,7 +17,7 @@
     "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes"
   },
   "dependencies": {
-    "@babel/runtime": "7.24.4"
+    "@babel/runtime": "7.26.10"
   },
   "devDependencies": {
     "@babel/cli": "7.24.1",
