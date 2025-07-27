@@ -1,6 +1,6 @@
 {
   "displayName": {
-    "name": "GLENN",
+    "name": "Glenns-Jest-Fiddle",
     "color": "blue"
   },
   "testEnvironment": "./jest-environment-fail-fast.js",
