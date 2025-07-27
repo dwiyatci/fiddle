@@ -2,47 +2,42 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "install:clean:root-only": "pnpm nuke && pnpm install",
     "install:clean": "pnpm purge && pnpm install",
     "purge": "pnpm nuke && pnpm clean",
+    "install:clean:root-only": "pnpm nuke && pnpm install",
     "nuke": "pnpm dlx rimraf node_modules",
     "clean": "pnpm -r nuke",
     "upgr": "pnpm upgrade --recursive --latest --interactive",
     "format": "prettier --write \"{**/*,*}.{js,ts,jsx,tsx,json,html,css,less,scss,sass,graphql,gql,yaml,yml,md}\"",
     "format:check": "prettier --list-different \"{**/*,*}.{js,ts,jsx,tsx,json,html,css,less,scss,sass,graphql,gql,yaml,yml,md}\"",
-    "ciro": "pnpm install:clean:root-only",
     "cix": "pnpm install:clean",
+    "cixro": "pnpm install:clean:root-only",
     "x": "lerna run x",
     "release:dry-run": "lerna version --no-git-tag-version --no-push --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes",
     "release": "lerna version --conventional-commits --exact --message \"📦 chore(release): version %s build ${BUILD_NUMBER} [ci skip]\" --yes"
   },
   "dependencies": {
-    "@babel/runtime": "7.24.4"
+    "@babel/runtime": "7.28.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.24.1",
-    "@babel/core": "7.24.4",
-    "@babel/plugin-proposal-class-properties": "7.18.6",
-    "@babel/plugin-proposal-export-default-from": "7.24.1",
-    "@babel/plugin-proposal-export-namespace-from": "7.18.9",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "7.18.6",
-    "@babel/plugin-proposal-object-rest-spread": "7.20.7",
-    "@babel/plugin-proposal-optional-chaining": "7.21.0",
-    "@babel/plugin-proposal-pipeline-operator": "7.24.1",
-    "@babel/plugin-transform-runtime": "7.24.3",
-    "@babel/preset-env": "7.24.4",
-    "@babel/preset-flow": "7.24.1",
-    "@babel/preset-react": "7.24.1",
-    "@lerna-lite/cli": "3.3.3",
-    "@lerna-lite/run": "3.3.3",
-    "@trivago/prettier-plugin-sort-imports": "4.3.0",
+    "@babel/cli": "7.28.0",
+    "@babel/core": "7.28.0",
+    "@babel/plugin-proposal-export-default-from": "7.27.1",
+    "@babel/plugin-proposal-pipeline-operator": "7.27.1",
+    "@babel/plugin-transform-runtime": "7.28.0",
+    "@babel/preset-env": "7.28.0",
+    "@babel/preset-flow": "7.27.1",
+    "@babel/preset-react": "7.27.1",
+    "@lerna-lite/cli": "4.6.2",
+    "@lerna-lite/run": "4.6.2",
+    "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "babel-plugin-client-only-require": "1.0.1",
-    "prettier": "3.2.5"
+    "prettier": "3.6.2"
   },
   "workspaces": [
     "packages/*"
   ],
   "volta": {
-    "node": "18.18.2"
+    "node": "22.17.1"
   }
 }
