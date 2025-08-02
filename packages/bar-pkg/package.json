@@ -6,13 +6,16 @@
   "scripts": {
     "nuke": "pnpm dlx rimraf node_modules",
     "x": "echo \"x from bar\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Glenn Dwiyatcita <glenn@nonpartisan.com>",
   "license": "ISC",
   "dependencies": {
     "@dwiyatci/foo-pkg": "1.0.4",
     "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "jest": "30.0.5"
   },
   "publishConfig": {
     "access": "public"

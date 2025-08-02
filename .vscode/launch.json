@@ -1,0 +1,47 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "vscode-jest-tests.v2.foo-pkg",
+      "cwd": "${workspaceFolder}/packages/foo-pkg",
+      "runtimeExecutable": "pnpm",
+      "args": [
+        "run",
+        "test",
+        "--runInBand",
+        "--watchAll=false",
+        "--testNamePattern",
+        "${jest.testNamePattern}",
+        "--runTestsByPath",
+        "${jest.testFile}"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "vscode-jest-tests.v2.bar-pkg",
+      "cwd": "${workspaceFolder}/packages/bar-pkg",
+      "runtimeExecutable": "pnpm",
+      "args": [
+        "run",
+        "test",
+        "--runInBand",
+        "--watchAll=false",
+        "--testNamePattern",
+        "${jest.testNamePattern}",
+        "--runTestsByPath",
+        "${jest.testFile}"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "trace": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "jest.jestCommandLine": "pnpm run test",
+  "jest.virtualFolders": [
+    {
+      "name": "foo-pkg",
+      "rootPath": "packages/foo-pkg"
+    },
+    {
+      "name": "bar-pkg",
+      "rootPath": "packages/bar-pkg"
+    }
+  ]
+}

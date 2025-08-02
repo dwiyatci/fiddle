@@ -6,7 +6,7 @@
   "scripts": {
     "nuke": "pnpm dlx rimraf node_modules",
     "x": "echo \"x from foo\"",
-    "test": "node ./src/__tests__/the-answer.spec.mjs",
+    "test": "jest",
     "start": "pnpm build --watch",
     "build": "babel src --out-dir lib --ignore \"src/{**/,}__tests__\" --root-mode upward --copy-files --delete-dir-on-start --source-maps"
   },
@@ -15,6 +15,9 @@
   "dependencies": {
     "lodash": "4.17.21",
     "the-answer": "1.0.0"
+  },
+  "devDependencies": {
+    "jest": "30.0.5"
   },
   "publishConfig": {
     "access": "public"

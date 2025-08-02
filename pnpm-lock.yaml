@@ -48,9 +48,6 @@ importers:
       babel-plugin-client-only-require:
         specifier: 1.0.1
         version: 1.0.1
-      jest:
-        specifier: 30.0.5
-        version: 30.0.5(@types/node@24.1.0)
       prettier:
         specifier: 3.6.2
         version: 3.6.2
@@ -63,6 +60,10 @@ importers:
       lodash:
         specifier: 4.17.21
         version: 4.17.21
+    devDependencies:
+      jest:
+        specifier: 30.0.5
+        version: 30.0.5(@types/node@24.1.0)
 
   packages/foo-pkg:
     dependencies:
@@ -72,6 +73,10 @@ importers:
       the-answer:
         specifier: 1.0.0
         version: 1.0.0
+    devDependencies:
+      jest:
+        specifier: 30.0.5
+        version: 30.0.5(@types/node@24.1.0)
 
 packages:
 
