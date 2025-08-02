@@ -21,7 +21,8 @@
         "${jest.testFile}"
       ],
       "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
+      "internalConsoleOptions": "neverOpen",
+      "trace": true
     },
     {
       "type": "node",
